@@ -1,4 +1,4 @@
-# Prand: High Quality Hardware Based Pseudo Random Number Generator
+# High Quality Hardware Based Pseudo Random Number Generator
 
 Prand is a lightweight C utility that produces high quality randomness by leveraging the **RDRAND** CPU instruction, which generates entropy directly from the processor's hardware random number generator. This hardware RNG draws entropy from physical phenomena such as thermal noise within the CPU silicon, providing cryptographically strong random values efficiently and securely.
 
