@@ -62,5 +62,6 @@ Although RDRAND provides strong hardware entropy, it is recommended to combine m
 
 ---
 
-*Prand is a compact and reliable source of hardware-generated randomness, ideal for secure tokens, passwords, and cryptographic seeding.*  
+## License
 
+This project is provided under the GPL3 License.
