@@ -23,7 +23,7 @@ The RDSEED instruction complements RDRAND by exposing raw entropy for seeding ot
 
 ## Example Usage
 
-Build and run Prand to generate a 32 character pseudo random printable string directly from hardware entropy:
+Build and run `prand` to generate a 32 character pseudo random printable string directly from hardware entropy:
 
 ```
 git clone https://github.com/gaidardzhiev/prand
