@@ -65,3 +65,5 @@ Although RDRAND provides strong hardware entropy, it is recommended to combine m
 ## License
 
 This project is provided under the GPL3 License.
+
+---
