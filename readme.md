@@ -60,10 +60,6 @@ Although RDRAND provides strong hardware entropy, it is recommended to combine m
 - [RDRAND on Wikipedia](https://en.wikipedia.org/wiki/RDRAND)  
 - NIST SP 800-90A compliance and cryptographic validation  
 
----
-
 ## License
 
 This project is provided under the GPL3 License.
-
----
