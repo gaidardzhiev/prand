@@ -5,7 +5,7 @@ Prand is a lightweight C utility that produces high quality randomness by levera
 ## Features
 
 - Utilizes Intel (and compatible AMD) CPUs’ RDRAND instruction for true hardware based randomness.
-- Bypasses software-only pseudorandom number generators by obtaining entropy directly from the CPU's built in entropy source.
+- Bypasses software only pseudorandom number generators by obtaining entropy directly from the CPU's built in entropy source.
 - Produces randomness compliant with standards such as NIST SP 800-90A, FIPS 140-2, and ANSI X9.82 via the underlying hardware RNG design.
 - Suitable for cryptographic applications, secure key generation, and any context requiring high quality entropy.
 - Simple and fast, relying on a hardware entropy source operating asynchronously at gigabit speeds.
@@ -36,7 +36,7 @@ make
 
 The program uses the `_rdrand32_step()` intrinsic to get 32 bit hardware generated random values. It fills a buffer with random printable characters (excluding spaces) by:
 
-- Calling RDRAND repeatedly to obtain 32-bit random numbers.
+- Calling RDRAND repeatedly to obtain 32 bit random numbers.
 - Mapping those numbers to bytes and checking if they are printable characters.
 - Ignoring non printable characters or spaces to produce a clean, readable string.
 - Printing the resulting null terminated string of length 32.
