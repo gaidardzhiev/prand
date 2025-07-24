@@ -1,18 +1,18 @@
 CC=gcc
-CFLAGS=-Wall -Wextra -std=c11
+CFLAGS=-Wall -Wextra -std=c11 -march=native
 BIN=prand
 SRC=prand.c
 
 .PHONY: all clean
 
-all: check_rdrand $(BIN)
+all: rdrand $(BIN)
 
-check_rdrand:
+rdrand:
 	@grep -q rdrand /proc/cpuinfo || \
 		(printf "error: the CPU does not support RDRAND instruction...\n"; exit 1)
 
 $(BIN): $(SRC)
-	$(CC) $(CFLAGS) -march=native -o $@ $<
+	$(CC) $(CFLAGS) -o $@ $<
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(BIN)
