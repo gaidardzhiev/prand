@@ -49,10 +49,6 @@ If the RDRAND instruction fails, the program prints an error message and exits, 
 - Compiler that supports `<x86intrin.h>` and the `_rdrand32_step()` intrinsic (e.g., `GCC` or `Clang` on `x86_64`).
 - Compatible operating system.
 
-## Disclaimer
-
-Although RDRAND provides strong hardware entropy, it is recommended to combine multiple entropy sources and apply defense in depth strategies, especially in highly sensitive cryptographic applications.
-
 ## References & Further Reading
 
 - Intel Digital Random Number Generator (DRNG) Software Implementation Guide  
